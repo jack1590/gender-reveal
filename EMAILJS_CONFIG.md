@@ -20,12 +20,14 @@ Email Admin: jcarl.30@gmail.com
 
 **Para:** jcarl.30@gmail.com (tú recibes notificación)
 
-**Subject:** 
+**Subject:**
+
 ```
 Nueva confirmación: {{guest_name}}
 ```
 
 **Body:**
+
 ```
 Hola,
 
@@ -40,6 +42,7 @@ Esta confirmación fue enviada automáticamente desde tu página de Gender Revea
 ```
 
 ### Variables que se envían desde el código:
+
 - `guest_name` - Nombre del invitado
 - `guest_count` - Número de personas
 - `message` - Mensaje especial (o "Sin mensaje")
@@ -54,11 +57,13 @@ Esta confirmación fue enviada automáticamente desde tu página de Gender Revea
 **Para:** Email del invitado
 
 **Subject:**
+
 ```
 ¡Confirmación de Asistencia - Gender Reveal! 🎉
 ```
 
 **Body:**
+
 ```
 Hola {{guest_name}},
 
@@ -86,6 +91,7 @@ La familia Pérez-García
 ```
 
 ### Variables que se envían desde el código:
+
 - `guest_name` - Nombre del invitado
 - `guest_count` - Número de personas
 - `message` - Mensaje especial
@@ -97,17 +103,20 @@ La familia Pérez-García
 ## ✅ Verificar Configuración
 
 ### Paso 1: Verificar Service
+
 1. Ve a: https://dashboard.emailjs.com/admin
 2. Click en "Email Services"
 3. Verifica que `service_y1ngbpb` esté activo y conectado
 
 ### Paso 2: Verificar Templates
+
 1. Ve a: https://dashboard.emailjs.com/admin/templates
 2. Verifica que existan ambos templates:
    - `template_xchd5rh` (Admin Notification)
    - `template_icgf8ur` (Guest Confirmation)
 
 ### Paso 3: Probar Templates
+
 1. En cada template, click en "Test It"
 2. Completa los campos de prueba:
    ```
@@ -124,6 +133,7 @@ La familia Pérez-García
 ## 🔧 Si los emails no llegan
 
 ### Checklist:
+
 - [ ] El Service está conectado y activo
 - [ ] Los Template IDs son correctos
 - [ ] El Public Key es correcto
@@ -132,9 +142,11 @@ La familia Pérez-García
 - [ ] Verifica el límite de emails (200/mes en plan gratuito)
 
 ### Ver historial de emails:
+
 https://dashboard.emailjs.com/admin/logs
 
 Aquí puedes ver:
+
 - ✅ Emails enviados exitosamente
 - ❌ Emails que fallaron (con el error)
 - 📊 Estadísticas de uso
@@ -144,12 +156,14 @@ Aquí puedes ver:
 ## 📊 Límites del Plan Gratuito
 
 EmailJS Plan Gratuito incluye:
+
 - ✅ 200 emails por mes
 - ✅ 2 servicios de email
 - ✅ Plantillas ilimitadas
 - ✅ Soporte básico
 
 **Cálculo para tu evento:**
+
 - Supongamos 50 invitados confirman
 - Cada confirmación = 2 emails (1 a ti + 1 al invitado)
 - Total = 100 emails
@@ -173,6 +187,7 @@ EmailJS Plan Gratuito incluye:
 5. Click "Confirmar mi Asistencia"
 
 ### Verificar:
+
 - [ ] Aparece mensaje de éxito con confetti
 - [ ] Recibes email en jcarl.30@gmail.com con notificación
 - [ ] Recibes email de confirmación en tu email de prueba
@@ -184,15 +199,18 @@ EmailJS Plan Gratuito incluye:
 ## 💡 Tips Adicionales
 
 ### Personalizar los emails:
+
 1. Ve a EmailJS dashboard
 2. Edita los templates
 3. Agrega logos, colores, o más información
 4. Los cambios se aplican inmediatamente (no necesitas actualizar el código)
 
 ### Agregar CC o BCC:
+
 En EmailJS, puedes configurar que todos los emails también se envíen a otro email como backup.
 
 ### Respuestas automáticas:
+
 EmailJS soporta reply-to addresses para que los invitados puedan responder directamente.
 
 ---
@@ -202,6 +220,7 @@ EmailJS soporta reply-to addresses para que los invitados puedan responder direc
 Si completaste todos los pasos de verificación, tu sistema de emails está 100% funcional.
 
 **Próximos pasos:**
+
 1. ✅ Verifica Firebase (ver `FIREBASE_SETUP.md`)
 2. ✅ Publica la página (ver `QUICK_START.md`)
 3. ✅ ¡Comparte con tus invitados!

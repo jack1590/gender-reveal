@@ -3,6 +3,7 @@
 ## ¿Qué acabo de recibir?
 
 Una página web completamente funcional para tu Gender Reveal con:
+
 - ✅ Reproductor de video
 - ✅ Votación en tiempo real
 - ✅ Mapa de ubicación
@@ -47,6 +48,7 @@ Una página web completamente funcional para tu Gender Reveal con:
 4. Puedes cambiar el nombre en: Site settings → Change site name
 
 **Comparte el link con tus invitados:**
+
 - WhatsApp ✅
 - Email ✅
 - Facebook ✅
@@ -72,13 +74,17 @@ Antes de compartir con tus invitados, verifica:
 ## 🎨 Personalizar (Opcional)
 
 ### Cambiar los nombres de la familia:
+
 Busca en `code.html` y reemplaza:
+
 - "familia" por tu nombre
 
 ### Cambiar colores:
+
 Edita las líneas 20-26 de `code.html` con tus colores favoritos
 
 ### Agregar más información:
+
 Edita el HTML directamente - ¡es fácil!
 
 ---
@@ -86,11 +92,13 @@ Edita el HTML directamente - ¡es fácil!
 ## 📊 Durante el Evento
 
 ### Ver los votos en vivo:
+
 https://console.firebase.google.com/project/gender-reveal-d667e/database
 
 Deja esta página abierta en una tablet o computadora durante el evento para ver los votos llegando en tiempo real! 📊
 
 ### Ver confirmaciones:
+
 En la misma página de Firebase, ve la sección `rsvps` para ver quién ha confirmado.
 
 ---
@@ -125,6 +133,7 @@ En la misma página de Firebase, ve la sección `rsvps` para ver quién ha confi
 ## 🎉 ¡Listo!
 
 Tu página está lista para usar. Solo falta:
+
 1. Configurar Firebase (2 minutos)
 2. Publicar en Netlify (3 minutos)
 3. ¡Compartir con tus invitados!

@@ -5,9 +5,11 @@
 Si aún no has creado la Realtime Database, sigue estos pasos:
 
 ### 1. Ve a Firebase Console
+
 https://console.firebase.google.com/project/gender-reveal-d667e
 
 ### 2. Crear Realtime Database
+
 1. En el menú lateral, click en **"Build"** → **"Realtime Database"**
 2. Click en **"Create Database"**
 3. Selecciona ubicación: **"United States (us-central1)"** (recomendado)
@@ -63,6 +65,7 @@ votes
 ```
 
 **Cómo hacerlo:**
+
 - Nombre: `votes`
 - Click en "+" para agregar child
   - Nombre: `girl`, Valor: `0`
@@ -72,6 +75,7 @@ votes
 ### 5. Verifica la URL de la Database
 
 Tu URL debería ser:
+
 ```
 https://gender-reveal-d667e-default-rtdb.firebaseio.com
 ```
@@ -93,12 +97,14 @@ Una vez configurado todo, abre `code.html` en tu navegador y:
 ## 🧪 Prueba las Funcionalidades
 
 ### Test 1: Votos
+
 1. Click en "Team Girl" o "Team Boy"
 2. Deberías ver una notificación verde
 3. Refresca la página - el contador debería mantener el nuevo número
 4. Abre la página en otra pestaña - debería mostrar el mismo número
 
 ### Test 2: RSVP
+
 1. Completa el formulario
 2. Ingresa tu email cuando se te pida
 3. Verifica que lleguen 2 emails:
@@ -110,14 +116,17 @@ Una vez configurado todo, abre `code.html` en tu navegador y:
 ## 🔧 Si algo no funciona
 
 ### Error: "Firebase is not defined"
+
 - Verifica tu conexión a internet
 - Los scripts de Firebase se cargan desde CDN
 
 ### Error: "Permission denied"
+
 - Verifica que aplicaste las reglas correctamente
 - Asegúrate de que la base de datos esté creada
 
 ### Los emails no llegan
+
 - Ve a: https://dashboard.emailjs.com/admin/logs
 - Revisa el historial de emails enviados
 - Verifica el límite de emails (200/mes en plan gratuito)
@@ -127,6 +136,7 @@ Una vez configurado todo, abre `code.html` en tu navegador y:
 ## 📊 Monitoreo en Tiempo Real
 
 ### Ver actividad en vivo:
+
 1. Ve a Firebase Console → Realtime Database
 2. Deja la pestaña abierta
 3. Cuando alguien vote o confirme asistencia, verás los cambios instantáneamente
